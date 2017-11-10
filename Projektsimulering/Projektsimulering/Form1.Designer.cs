@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FireButton = new System.Windows.Forms.Button();
-            this.RestartButton = new System.Windows.Forms.Button();
+            this.fireButton = new System.Windows.Forms.Button();
+            this.restartButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.AngleTextBox = new System.Windows.Forms.TextBox();
-            this.VelocityTextBox = new System.Windows.Forms.TextBox();
+            this.angleTextBox = new System.Windows.Forms.TextBox();
+            this.velocityTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.TargetPosX = new System.Windows.Forms.Label();
-            this.TargetPosY = new System.Windows.Forms.Label();
+            this.targetPosX = new System.Windows.Forms.Label();
+            this.targetPosY = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.ProjPosX = new System.Windows.Forms.Label();
-            this.ProjPosY = new System.Windows.Forms.Label();
-            this.StatusLabel = new System.Windows.Forms.Label();
+            this.projPosX = new System.Windows.Forms.Label();
+            this.projPosY = new System.Windows.Forms.Label();
+            this.statusLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // FireButton
+            // fireButton
             // 
-            this.FireButton.Location = new System.Drawing.Point(173, 301);
-            this.FireButton.Name = "FireButton";
-            this.FireButton.Size = new System.Drawing.Size(234, 94);
-            this.FireButton.TabIndex = 0;
-            this.FireButton.Text = "Fire";
-            this.FireButton.UseVisualStyleBackColor = true;
-            this.FireButton.Click += new System.EventHandler(this.button1_Click);
+            this.fireButton.Location = new System.Drawing.Point(173, 301);
+            this.fireButton.Name = "fireButton";
+            this.fireButton.Size = new System.Drawing.Size(234, 94);
+            this.fireButton.TabIndex = 0;
+            this.fireButton.Text = "Fire";
+            this.fireButton.UseVisualStyleBackColor = true;
+            this.fireButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // RestartButton
+            // restartButton
             // 
-            this.RestartButton.Location = new System.Drawing.Point(173, 436);
-            this.RestartButton.Name = "RestartButton";
-            this.RestartButton.Size = new System.Drawing.Size(234, 98);
-            this.RestartButton.TabIndex = 1;
-            this.RestartButton.Text = "Restart";
-            this.RestartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Location = new System.Drawing.Point(173, 436);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(234, 98);
+            this.restartButton.TabIndex = 1;
+            this.restartButton.Text = "Restart";
+            this.restartButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -84,20 +84,20 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Velocity";
             // 
-            // AngleTextBox
+            // angleTextBox
             // 
-            this.AngleTextBox.Location = new System.Drawing.Point(173, 109);
-            this.AngleTextBox.Name = "AngleTextBox";
-            this.AngleTextBox.Size = new System.Drawing.Size(145, 38);
-            this.AngleTextBox.TabIndex = 4;
+            this.angleTextBox.Location = new System.Drawing.Point(173, 109);
+            this.angleTextBox.Name = "angleTextBox";
+            this.angleTextBox.Size = new System.Drawing.Size(145, 38);
+            this.angleTextBox.TabIndex = 4;
             // 
-            // VelocityTextBox
+            // velocityTextBox
             // 
-            this.VelocityTextBox.Location = new System.Drawing.Point(173, 179);
-            this.VelocityTextBox.Name = "VelocityTextBox";
-            this.VelocityTextBox.Size = new System.Drawing.Size(145, 38);
-            this.VelocityTextBox.TabIndex = 5;
-            this.VelocityTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.velocityTextBox.Location = new System.Drawing.Point(173, 179);
+            this.velocityTextBox.Name = "velocityTextBox";
+            this.velocityTextBox.Size = new System.Drawing.Size(145, 38);
+            this.velocityTextBox.TabIndex = 5;
+            this.velocityTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -126,23 +126,23 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Y:";
             // 
-            // TargetPosX
+            // targetPosX
             // 
-            this.TargetPosX.AutoSize = true;
-            this.TargetPosX.Location = new System.Drawing.Point(697, 410);
-            this.TargetPosX.Name = "TargetPosX";
-            this.TargetPosX.Size = new System.Drawing.Size(93, 32);
-            this.TargetPosX.TabIndex = 9;
-            this.TargetPosX.Text = "label6";
+            this.targetPosX.AutoSize = true;
+            this.targetPosX.Location = new System.Drawing.Point(697, 410);
+            this.targetPosX.Name = "targetPosX";
+            this.targetPosX.Size = new System.Drawing.Size(93, 32);
+            this.targetPosX.TabIndex = 9;
+            this.targetPosX.Text = "label6";
             // 
-            // TargetPosY
+            // targetPosY
             // 
-            this.TargetPosY.AutoSize = true;
-            this.TargetPosY.Location = new System.Drawing.Point(697, 470);
-            this.TargetPosY.Name = "TargetPosY";
-            this.TargetPosY.Size = new System.Drawing.Size(93, 32);
-            this.TargetPosY.TabIndex = 10;
-            this.TargetPosY.Text = "label7";
+            this.targetPosY.AutoSize = true;
+            this.targetPosY.Location = new System.Drawing.Point(697, 470);
+            this.targetPosY.Name = "targetPosY";
+            this.targetPosY.Size = new System.Drawing.Size(93, 32);
+            this.targetPosY.TabIndex = 10;
+            this.targetPosY.Text = "label7";
             // 
             // label8
             // 
@@ -171,55 +171,55 @@
             this.label10.TabIndex = 13;
             this.label10.Text = "Y:";
             // 
-            // ProjPosX
+            // projPosX
             // 
-            this.ProjPosX.AutoSize = true;
-            this.ProjPosX.Location = new System.Drawing.Point(703, 154);
-            this.ProjPosX.Name = "ProjPosX";
-            this.ProjPosX.Size = new System.Drawing.Size(109, 32);
-            this.ProjPosX.TabIndex = 14;
-            this.ProjPosX.Text = "label11";
+            this.projPosX.AutoSize = true;
+            this.projPosX.Location = new System.Drawing.Point(703, 154);
+            this.projPosX.Name = "projPosX";
+            this.projPosX.Size = new System.Drawing.Size(109, 32);
+            this.projPosX.TabIndex = 14;
+            this.projPosX.Text = "label11";
             // 
-            // ProjPosY
+            // projPosY
             // 
-            this.ProjPosY.AutoSize = true;
-            this.ProjPosY.Location = new System.Drawing.Point(703, 206);
-            this.ProjPosY.Name = "ProjPosY";
-            this.ProjPosY.Size = new System.Drawing.Size(109, 32);
-            this.ProjPosY.TabIndex = 15;
-            this.ProjPosY.Text = "label12";
+            this.projPosY.AutoSize = true;
+            this.projPosY.Location = new System.Drawing.Point(703, 206);
+            this.projPosY.Name = "projPosY";
+            this.projPosY.Size = new System.Drawing.Size(109, 32);
+            this.projPosY.TabIndex = 15;
+            this.projPosY.Text = "label12";
             // 
-            // StatusLabel
+            // statusLabel
             // 
-            this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Location = new System.Drawing.Point(445, 647);
-            this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(96, 32);
-            this.StatusLabel.TabIndex = 16;
-            this.StatusLabel.Text = "Status";
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Location = new System.Drawing.Point(445, 647);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(96, 32);
+            this.statusLabel.TabIndex = 16;
+            this.statusLabel.Text = "Status";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 750);
-            this.Controls.Add(this.StatusLabel);
-            this.Controls.Add(this.ProjPosY);
-            this.Controls.Add(this.ProjPosX);
+            this.Controls.Add(this.statusLabel);
+            this.Controls.Add(this.projPosY);
+            this.Controls.Add(this.projPosX);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.TargetPosY);
-            this.Controls.Add(this.TargetPosX);
+            this.Controls.Add(this.targetPosY);
+            this.Controls.Add(this.targetPosX);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.VelocityTextBox);
-            this.Controls.Add(this.AngleTextBox);
+            this.Controls.Add(this.velocityTextBox);
+            this.Controls.Add(this.angleTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.RestartButton);
-            this.Controls.Add(this.FireButton);
+            this.Controls.Add(this.restartButton);
+            this.Controls.Add(this.fireButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -229,23 +229,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Button FireButton;
-        private System.Windows.Forms.Button RestartButton;
+        private System.Windows.Forms.Button fireButton;
+        private System.Windows.Forms.Button restartButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox AngleTextBox;
-        private System.Windows.Forms.TextBox VelocityTextBox;
+        private System.Windows.Forms.TextBox angleTextBox;
+        private System.Windows.Forms.TextBox velocityTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label TargetPosX;
-        private System.Windows.Forms.Label TargetPosY;
+        private System.Windows.Forms.Label targetPosX;
+        private System.Windows.Forms.Label targetPosY;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label ProjPosX;
-        private System.Windows.Forms.Label ProjPosY;
-        private System.Windows.Forms.Label StatusLabel;
+        private System.Windows.Forms.Label projPosX;
+        private System.Windows.Forms.Label projPosY;
+        private System.Windows.Forms.Label statusLabel;
     }
 }
 
