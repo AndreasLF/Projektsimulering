@@ -15,16 +15,16 @@ namespace Projektsimulering
         public Form1()
         {
             InitializeComponent();
+
+
+            gameTimer.Interval = 1000;
+            gameTimer.Tick += updateScreen;
+            gameTimer.Start();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void updateScreen(object sender, EventArgs e)
         {
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
+            throw new NotImplementedException();
         }
     }
 }
