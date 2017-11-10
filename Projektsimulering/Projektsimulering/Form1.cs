@@ -22,9 +22,12 @@ namespace Projektsimulering
             gameTimer.Start();
         }
 
+        int timeElapsed = 0;
+
         private void updateScreen(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            timeElapsed += 1;
+            statusLabel.Text = timeElapsed.ToString();
         }
     }
 }
