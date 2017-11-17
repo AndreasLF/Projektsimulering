@@ -29,10 +29,11 @@ namespace Projektsimulering
 
         private void updateScreen(object sender, EventArgs e)
         {
-
             double xPos = Math.Cos(angleRadians)*startVelocity*timeElapsed;
             double yPos = Math.Sin(angleRadians) * startVelocity * timeElapsed
                           - (gravAcc * Math.Pow(timeElapsed, 2) / 2);
+
+
         }
     }
 }
