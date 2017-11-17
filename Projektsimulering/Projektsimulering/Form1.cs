@@ -32,8 +32,8 @@ namespace Projektsimulering
         int height = 0;
         int distance = 0;
 
-        int yVelocity = 100;
-        int xVelocity = 20;
+        int yVelocity = 0;
+        int xVelocity = 0;
 
         private void updateScreen(object sender, EventArgs e)
         {
@@ -44,18 +44,16 @@ namespace Projektsimulering
 
             projPosY.Text = height.ToString();
             projPosX.Text = distance.ToString();
-
-            /*
-             * double xPos = Math.Cos(angleRadians)*startVelocity*timeElapsed;
-             * double yPos = Math.Sin(angleRadians) * startVelocity * timeElapsed
-             *             - (gravAcc * Math.Pow(timeElapsed, 2) / 2);
-             */
         }
 
         private void fireButton_Click(object sender, EventArgs e)
         {
-            yVelocity = 100;
-            xVelocity = 20;
+            double angleInput = Convert.ToDouble(angleTextBox.Text);
+            angleInput = angleInput * (Math.PI / 180); //Converts angleInput from degrees to radians.
+            double velocityInput = Convert.ToDouble(velocityTextBox.Text);
+            
+            xVelocity = Convert.ToInt32(Math.Cos(angleInput) * velocityInput);
+            yVelocity = Convert.ToInt32(Math.Sin(angleInput) * velocityInput);
 
             gameTimer.Start();
         }
