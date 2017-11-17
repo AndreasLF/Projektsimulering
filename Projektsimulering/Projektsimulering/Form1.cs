@@ -15,52 +15,49 @@ namespace Projektsimulering
         public Form1()
         {
             InitializeComponent();
-
-
+            
             gameTimer.Interval = 1000;
             gameTimer.Tick += updateScreen;
-            gameTimer.Start();
         }
 
         /*
-        double angleRadians = (45 * Math.PI) / 180;
-        double startVelocity = 10;
-        double timeElapsed = 10;
-        double gravAcc = 9.82;
-        */
+         * double angleRadians = (45 * Math.PI) / 180;
+         * double startVelocity = 10;
+         * double timeElapsed = 10;
+         * double gravAcc = 9.82;
+         */
 
         int gravAcc = 10;
-        int yVelocity = 100;
         int sampleTime = 1;
         int height = 0;
+        int distance = 0;
 
+        int yVelocity = 100;
         int xVelocity = 20;
-        int length = 0;
-
-
-
-
 
         private void updateScreen(object sender, EventArgs e)
         {
-
             yVelocity = yVelocity - gravAcc * sampleTime;
             height = height + yVelocity * sampleTime;
 
-            length = length + xVelocity * sampleTime;
+            distance = distance + xVelocity * sampleTime;
 
             projPosY.Text = height.ToString();
-            projPosX.Text = length.ToString();
-
-
-
+            projPosX.Text = distance.ToString();
 
             /*
-            double xPos = Math.Cos(angleRadians)*startVelocity*timeElapsed;
-            double yPos = Math.Sin(angleRadians) * startVelocity * timeElapsed
-                          - (gravAcc * Math.Pow(timeElapsed, 2) / 2);
-            */
+             * double xPos = Math.Cos(angleRadians)*startVelocity*timeElapsed;
+             * double yPos = Math.Sin(angleRadians) * startVelocity * timeElapsed
+             *             - (gravAcc * Math.Pow(timeElapsed, 2) / 2);
+             */
+        }
 
+        private void fireButton_Click(object sender, EventArgs e)
+        {
+            yVelocity = 100;
+            xVelocity = 20;
+
+            gameTimer.Start();
         }
     }
 }
