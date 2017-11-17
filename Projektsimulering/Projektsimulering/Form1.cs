@@ -22,17 +22,19 @@ namespace Projektsimulering
             gameTimer.Start();
         }
 
-        double angleRadians = (45 * Math.PI) / 180;
-        double startVelocity = 10;
-        double timeElapsed = 10;
-        double gravAcc = 9.82;
+        /*
+         * double angleRadians = (45 * Math.PI) / 180;
+         * double startVelocity = 10;
+         * double timeElapsed = 10;
+         * double gravAcc = 9.82;
+         */
 
         private void updateScreen(object sender, EventArgs e)
         {
-            /*double xPos = Math.Cos(angleRadians)*startVelocity*timeElapsed;
-            double yPos = Math.Sin(angleRadians) * startVelocity * timeElapsed
-                          - (gravAcc * Math.Pow(timeElapsed, 2) / 2);
-            */
+            /* double xPos = Math.Cos(angleRadians)*startVelocity*timeElapsed;
+             * double yPos = Math.Sin(angleRadians) * startVelocity * timeElapsed
+             *             - (gravAcc * Math.Pow(timeElapsed, 2) / 2);
+             */
 
         }
     }
