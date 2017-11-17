@@ -34,6 +34,9 @@ namespace Projektsimulering
         int sampleTime = 1;
         int height = 0;
 
+        int xVelocity = 20;
+        int length = 0;
+
 
 
 
@@ -44,7 +47,11 @@ namespace Projektsimulering
             yVelocity = yVelocity - gravAcc * sampleTime;
             height = height + yVelocity * sampleTime;
 
+            length = length + xVelocity * sampleTime;
+
             projPosY.Text = height.ToString();
+            projPosX.Text = length.ToString();
+
 
 
 
@@ -55,8 +62,5 @@ namespace Projektsimulering
             */
 
         }
-    }
-}
-
     }
 }
