@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.fireButton = new System.Windows.Forms.Button();
             this.restartButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.textLabelAngle = new System.Windows.Forms.Label();
+            this.textLabelVelocity = new System.Windows.Forms.Label();
             this.angleTextBox = new System.Windows.Forms.TextBox();
             this.velocityTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.textLabelTPos = new System.Windows.Forms.Label();
+            this.textLabelTPosX = new System.Windows.Forms.Label();
+            this.textLabelTPosY = new System.Windows.Forms.Label();
             this.targetPosX = new System.Windows.Forms.Label();
             this.targetPosY = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.textLabelPPos = new System.Windows.Forms.Label();
+            this.textLabelPPosX = new System.Windows.Forms.Label();
+            this.textLabelPPosY = new System.Windows.Forms.Label();
             this.projPosX = new System.Windows.Forms.Label();
             this.projPosY = new System.Windows.Forms.Label();
             this.statusLabel = new System.Windows.Forms.Label();
@@ -69,25 +69,25 @@
             this.restartButton.Text = "Restart";
             this.restartButton.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // textLabelAngle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 47);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Angle";
+            this.textLabelAngle.AutoSize = true;
+            this.textLabelAngle.Location = new System.Drawing.Point(129, 47);
+            this.textLabelAngle.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelAngle.Name = "textLabelAngle";
+            this.textLabelAngle.Size = new System.Drawing.Size(34, 13);
+            this.textLabelAngle.TabIndex = 2;
+            this.textLabelAngle.Text = "Angle";
             // 
-            // label2
+            // textLabelVelocity
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(129, 75);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Velocity";
+            this.textLabelVelocity.AutoSize = true;
+            this.textLabelVelocity.Location = new System.Drawing.Point(129, 75);
+            this.textLabelVelocity.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelVelocity.Name = "textLabelVelocity";
+            this.textLabelVelocity.Size = new System.Drawing.Size(44, 13);
+            this.textLabelVelocity.TabIndex = 3;
+            this.textLabelVelocity.Text = "Velocity";
             // 
             // angleTextBox
             // 
@@ -105,35 +105,35 @@
             this.velocityTextBox.Size = new System.Drawing.Size(57, 20);
             this.velocityTextBox.TabIndex = 5;
             // 
-            // label3
+            // textLabelTPos
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(234, 150);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Target position:";
+            this.textLabelTPos.AutoSize = true;
+            this.textLabelTPos.Location = new System.Drawing.Point(234, 150);
+            this.textLabelTPos.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelTPos.Name = "textLabelTPos";
+            this.textLabelTPos.Size = new System.Drawing.Size(80, 13);
+            this.textLabelTPos.TabIndex = 6;
+            this.textLabelTPos.Text = "Target position:";
             // 
-            // label4
+            // textLabelTPosX
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(236, 172);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "X:";
+            this.textLabelTPosX.AutoSize = true;
+            this.textLabelTPosX.Location = new System.Drawing.Point(236, 172);
+            this.textLabelTPosX.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelTPosX.Name = "textLabelTPosX";
+            this.textLabelTPosX.Size = new System.Drawing.Size(17, 13);
+            this.textLabelTPosX.TabIndex = 7;
+            this.textLabelTPosX.Text = "X:";
             // 
-            // label5
+            // textLabelTPosY
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(236, 197);
-            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Y:";
+            this.textLabelTPosY.AutoSize = true;
+            this.textLabelTPosY.Location = new System.Drawing.Point(236, 197);
+            this.textLabelTPosY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelTPosY.Name = "textLabelTPosY";
+            this.textLabelTPosY.Size = new System.Drawing.Size(17, 13);
+            this.textLabelTPosY.TabIndex = 8;
+            this.textLabelTPosY.Text = "Y:";
             // 
             // targetPosX
             // 
@@ -155,35 +155,35 @@
             this.targetPosY.TabIndex = 10;
             this.targetPosY.Text = "label7";
             // 
-            // label8
+            // textLabelPPos
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(236, 44);
-            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Projectile postition:";
+            this.textLabelPPos.AutoSize = true;
+            this.textLabelPPos.Location = new System.Drawing.Point(236, 44);
+            this.textLabelPPos.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelPPos.Name = "textLabelPPos";
+            this.textLabelPPos.Size = new System.Drawing.Size(95, 13);
+            this.textLabelPPos.TabIndex = 11;
+            this.textLabelPPos.Text = "Projectile postition:";
             // 
-            // label9
+            // textLabelPPosX
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(236, 65);
-            this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(17, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "X:";
+            this.textLabelPPosX.AutoSize = true;
+            this.textLabelPPosX.Location = new System.Drawing.Point(236, 65);
+            this.textLabelPPosX.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelPPosX.Name = "textLabelPPosX";
+            this.textLabelPPosX.Size = new System.Drawing.Size(17, 13);
+            this.textLabelPPosX.TabIndex = 12;
+            this.textLabelPPosX.Text = "X:";
             // 
-            // label10
+            // textLabelPPosY
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(236, 86);
-            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 13);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Y:";
+            this.textLabelPPosY.AutoSize = true;
+            this.textLabelPPosY.Location = new System.Drawing.Point(236, 86);
+            this.textLabelPPosY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelPPosY.Name = "textLabelPPosY";
+            this.textLabelPPosY.Size = new System.Drawing.Size(17, 13);
+            this.textLabelPPosY.TabIndex = 13;
+            this.textLabelPPosY.Text = "Y:";
             // 
             // projPosX
             // 
@@ -227,18 +227,18 @@
             this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.projPosY);
             this.Controls.Add(this.projPosX);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textLabelPPosY);
+            this.Controls.Add(this.textLabelPPosX);
+            this.Controls.Add(this.textLabelPPos);
             this.Controls.Add(this.targetPosY);
             this.Controls.Add(this.targetPosX);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textLabelTPosY);
+            this.Controls.Add(this.textLabelTPosX);
+            this.Controls.Add(this.textLabelTPos);
             this.Controls.Add(this.velocityTextBox);
             this.Controls.Add(this.angleTextBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textLabelVelocity);
+            this.Controls.Add(this.textLabelAngle);
             this.Controls.Add(this.restartButton);
             this.Controls.Add(this.fireButton);
             this.Margin = new System.Windows.Forms.Padding(1);
@@ -253,18 +253,18 @@
 
         private System.Windows.Forms.Button fireButton;
         private System.Windows.Forms.Button restartButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label textLabelAngle;
+        private System.Windows.Forms.Label textLabelVelocity;
         private System.Windows.Forms.TextBox angleTextBox;
         private System.Windows.Forms.TextBox velocityTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label textLabelTPos;
+        private System.Windows.Forms.Label textLabelTPosX;
+        private System.Windows.Forms.Label textLabelTPosY;
         private System.Windows.Forms.Label targetPosX;
         private System.Windows.Forms.Label targetPosY;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label textLabelPPos;
+        private System.Windows.Forms.Label textLabelPPosX;
+        private System.Windows.Forms.Label textLabelPPosY;
         private System.Windows.Forms.Label projPosX;
         private System.Windows.Forms.Label projPosY;
         private System.Windows.Forms.Label statusLabel;
