@@ -49,6 +49,7 @@
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.textLabelTime = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
+            this.textLabelStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // fireButton
@@ -215,12 +216,12 @@
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(167, 271);
+            this.statusLabel.Location = new System.Drawing.Point(101, 244);
             this.statusLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(37, 13);
+            this.statusLabel.Size = new System.Drawing.Size(13, 13);
             this.statusLabel.TabIndex = 16;
-            this.statusLabel.Text = "Status";
+            this.statusLabel.Text = "0";
             // 
             // gameTimer
             // 
@@ -244,11 +245,22 @@
             this.timeLabel.TabIndex = 18;
             this.timeLabel.Text = "0";
             // 
+            // textLabelStatus
+            // 
+            this.textLabelStatus.AutoSize = true;
+            this.textLabelStatus.Location = new System.Drawing.Point(62, 244);
+            this.textLabelStatus.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.textLabelStatus.Name = "textLabelStatus";
+            this.textLabelStatus.Size = new System.Drawing.Size(40, 13);
+            this.textLabelStatus.TabIndex = 19;
+            this.textLabelStatus.Text = "Status:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 315);
+            this.Controls.Add(this.textLabelStatus);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.textLabelTime);
             this.Controls.Add(this.statusLabel);
@@ -298,6 +310,7 @@
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label textLabelTime;
         private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label textLabelStatus;
     }
 }
 

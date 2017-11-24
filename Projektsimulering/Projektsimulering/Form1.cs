@@ -22,13 +22,6 @@ namespace Projektsimulering
             updateLabels();
         }
 
-        /*
-         * double angleRadians = (45 * Math.PI) / 180;
-         * double startVelocity = 10;
-         * double timeElapsed = 10;
-         * double gravAcc = 9.82;
-         */
-
         int gravAcc = 10;
         int sampleTime = 1;
         int projectilePosY = 0;
@@ -77,12 +70,12 @@ namespace Projektsimulering
             int dY = targetPosY - projectilePosY;
 
             double distance = Math.Sqrt(Math.Pow(dX, 2) + Math.Pow(dY, 2));
-            if (distance < targetRadius)
+            if (distance < targetRadius) //Win-state hvis projektil distance er inden for target radius.
             {
                 gameTimer.Stop();
                 statusLabel.Text = "Congratulations! You hit the target!";
             }
-            else if(projectilePosY <= 0)
+            else if(projectilePosY <= 0) //Failure-state hvis projektil er under jorden.
             {
                 gameTimer.Stop();
                 statusLabel.Text = "You hit the ground!";
