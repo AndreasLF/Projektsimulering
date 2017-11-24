@@ -35,6 +35,8 @@ namespace Projektsimulering
         int yVelocity = 0;
         int xVelocity = 0;
 
+        int timeElapsed = 0;
+
         private void updateScreen(object sender, EventArgs e)
         {
             yVelocity = yVelocity - gravAcc * sampleTime;
@@ -44,6 +46,9 @@ namespace Projektsimulering
 
             projPosY.Text = height.ToString();
             projPosX.Text = distance.ToString();
+
+            timeElapsed++;
+            timeLabel.Text = timeElapsed.ToString();
         }
 
         private void fireButton_Click(object sender, EventArgs e)
@@ -54,8 +59,22 @@ namespace Projektsimulering
             
             xVelocity = Convert.ToInt32(Math.Cos(angleInput) * velocityInput);
             yVelocity = Convert.ToInt32(Math.Sin(angleInput) * velocityInput);
-
+            
             gameTimer.Start();
+        }
+
+        private void restartButton_Click(object sender, EventArgs e)
+        {
+            height = 0;
+            projPosY.Text = height.ToString();
+
+            distance = 0;
+            projPosX.Text = distance.ToString();
+
+            timeElapsed = 0;
+            timeLabel.Text = timeElapsed.ToString();
+
+            gameTimer.Stop();
         }
     }
 }
