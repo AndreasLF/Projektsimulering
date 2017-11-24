@@ -18,6 +18,8 @@ namespace Projektsimulering
             
             gameTimer.Interval = 1000;
             gameTimer.Tick += updateScreen;
+
+            updateLabels();
         }
 
         /*
@@ -29,33 +31,62 @@ namespace Projektsimulering
 
         int gravAcc = 10;
         int sampleTime = 1;
-        int height = 0;
-        int distance = 0;
+        int projectilePosY = 0;
+        int projectilePosX = 0;
 
         int yVelocity = 0;
         int xVelocity = 0;
+
+        int targetPosX = 100;
+        int targetPosY = 0;
+        int targetRadius = 5;
 
         int timeElapsed = 0;
 
         private void updateScreen(object sender, EventArgs e)
         {
             yVelocity = yVelocity - gravAcc * sampleTime;
-            height = height + yVelocity * sampleTime;
+            projectilePosY = projectilePosY + yVelocity * sampleTime;
 
-            distance = distance + xVelocity * sampleTime;
+            projectilePosX = projectilePosX + xVelocity * sampleTime;
 
 
             timeElapsed++;
 
-            UpdateLabels();
+            updateLabels();
+
+            collisionDetect();
         }
 
-        private void UpdateLabels()
+        private void updateLabels()
         {
             timeLabel.Text = timeElapsed.ToString();
 
-            projPosY.Text = height.ToString();
-            projPosX.Text = distance.ToString();
+            projPosY.Text = projectilePosY.ToString();
+            projPosX.Text = projectilePosX.ToString();
+
+            statusLabel.Text = "Status";
+
+            targetPosXLabel.Text = targetPosX.ToString();
+            targetPosYLabel.Text = targetPosY.ToString();
+        }
+
+        private void collisionDetect()
+        {
+            int dX = targetPosX - projectilePosX;
+            int dY = targetPosY - projectilePosY;
+
+            double distance = Math.Sqrt(Math.Pow(dX, 2) + Math.Pow(dY, 2));
+            if (distance < targetRadius)
+            {
+                gameTimer.Stop();
+                statusLabel.Text = "Congratulations! You hit the target!";
+            }
+            else if(projectilePosY <= 0)
+            {
+                gameTimer.Stop();
+                statusLabel.Text = "You hit the ground!";
+            }
         }
 
         private void fireButton_Click(object sender, EventArgs e)
@@ -66,19 +97,25 @@ namespace Projektsimulering
             
             xVelocity = Convert.ToInt32(Math.Cos(angleInput) * velocityInput);
             yVelocity = Convert.ToInt32(Math.Sin(angleInput) * velocityInput);
-            
+
+            fireButton.Enabled = false;
+            restartButton.Enabled = true;
+
             gameTimer.Start();
         }
 
         private void restartButton_Click(object sender, EventArgs e)
         {
-            height = 0;
-            distance = 0;
+            projectilePosY = 0;
+            projectilePosX = 0;
 
             timeElapsed = 0;
 
+            fireButton.Enabled = true;
+            restartButton.Enabled = false;
+
             gameTimer.Stop();
-            UpdateLabels();
+            updateLabels();
         }
     }
 }

@@ -38,8 +38,8 @@
             this.textLabelTPos = new System.Windows.Forms.Label();
             this.textLabelTPosX = new System.Windows.Forms.Label();
             this.textLabelTPosY = new System.Windows.Forms.Label();
-            this.targetPosX = new System.Windows.Forms.Label();
-            this.targetPosY = new System.Windows.Forms.Label();
+            this.targetPosXLabel = new System.Windows.Forms.Label();
+            this.targetPosYLabel = new System.Windows.Forms.Label();
             this.textLabelPPos = new System.Windows.Forms.Label();
             this.textLabelPPosX = new System.Windows.Forms.Label();
             this.textLabelPPosY = new System.Windows.Forms.Label();
@@ -64,6 +64,7 @@
             // 
             // restartButton
             // 
+            this.restartButton.Enabled = false;
             this.restartButton.Location = new System.Drawing.Point(65, 183);
             this.restartButton.Margin = new System.Windows.Forms.Padding(1);
             this.restartButton.Name = "restartButton";
@@ -141,25 +142,25 @@
             this.textLabelTPosY.TabIndex = 8;
             this.textLabelTPosY.Text = "Y:";
             // 
-            // targetPosX
+            // targetPosXLabel
             // 
-            this.targetPosX.AutoSize = true;
-            this.targetPosX.Location = new System.Drawing.Point(261, 172);
-            this.targetPosX.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.targetPosX.Name = "targetPosX";
-            this.targetPosX.Size = new System.Drawing.Size(35, 13);
-            this.targetPosX.TabIndex = 9;
-            this.targetPosX.Text = "label6";
+            this.targetPosXLabel.AutoSize = true;
+            this.targetPosXLabel.Location = new System.Drawing.Point(261, 172);
+            this.targetPosXLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.targetPosXLabel.Name = "targetPosXLabel";
+            this.targetPosXLabel.Size = new System.Drawing.Size(13, 13);
+            this.targetPosXLabel.TabIndex = 9;
+            this.targetPosXLabel.Text = "0";
             // 
-            // targetPosY
+            // targetPosYLabel
             // 
-            this.targetPosY.AutoSize = true;
-            this.targetPosY.Location = new System.Drawing.Point(261, 197);
-            this.targetPosY.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.targetPosY.Name = "targetPosY";
-            this.targetPosY.Size = new System.Drawing.Size(35, 13);
-            this.targetPosY.TabIndex = 10;
-            this.targetPosY.Text = "label7";
+            this.targetPosYLabel.AutoSize = true;
+            this.targetPosYLabel.Location = new System.Drawing.Point(261, 197);
+            this.targetPosYLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.targetPosYLabel.Name = "targetPosYLabel";
+            this.targetPosYLabel.Size = new System.Drawing.Size(13, 13);
+            this.targetPosYLabel.TabIndex = 10;
+            this.targetPosYLabel.Text = "0";
             // 
             // textLabelPPos
             // 
@@ -256,8 +257,8 @@
             this.Controls.Add(this.textLabelPPosY);
             this.Controls.Add(this.textLabelPPosX);
             this.Controls.Add(this.textLabelPPos);
-            this.Controls.Add(this.targetPosY);
-            this.Controls.Add(this.targetPosX);
+            this.Controls.Add(this.targetPosYLabel);
+            this.Controls.Add(this.targetPosXLabel);
             this.Controls.Add(this.textLabelTPosY);
             this.Controls.Add(this.textLabelTPosX);
             this.Controls.Add(this.textLabelTPos);
@@ -286,8 +287,8 @@
         private System.Windows.Forms.Label textLabelTPos;
         private System.Windows.Forms.Label textLabelTPosX;
         private System.Windows.Forms.Label textLabelTPosY;
-        private System.Windows.Forms.Label targetPosX;
-        private System.Windows.Forms.Label targetPosY;
+        private System.Windows.Forms.Label targetPosXLabel;
+        private System.Windows.Forms.Label targetPosYLabel;
         private System.Windows.Forms.Label textLabelPPos;
         private System.Windows.Forms.Label textLabelPPosX;
         private System.Windows.Forms.Label textLabelPPosY;
