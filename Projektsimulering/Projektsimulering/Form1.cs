@@ -44,11 +44,18 @@ namespace Projektsimulering
 
             distance = distance + xVelocity * sampleTime;
 
-            projPosY.Text = height.ToString();
-            projPosX.Text = distance.ToString();
 
             timeElapsed++;
+
+            UpdateLabels();
+        }
+
+        private void UpdateLabels()
+        {
             timeLabel.Text = timeElapsed.ToString();
+
+            projPosY.Text = height.ToString();
+            projPosX.Text = distance.ToString();
         }
 
         private void fireButton_Click(object sender, EventArgs e)
@@ -66,15 +73,12 @@ namespace Projektsimulering
         private void restartButton_Click(object sender, EventArgs e)
         {
             height = 0;
-            projPosY.Text = height.ToString();
-
             distance = 0;
-            projPosX.Text = distance.ToString();
 
             timeElapsed = 0;
-            timeLabel.Text = timeElapsed.ToString();
 
             gameTimer.Stop();
+            UpdateLabels();
         }
     }
 }
