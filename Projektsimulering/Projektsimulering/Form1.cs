@@ -38,17 +38,21 @@ namespace Projektsimulering
 
         private void updateScreen(object sender, EventArgs e)
         {
-            yVelocity = yVelocity - gravAcc * sampleTime;
-            projectilePosY = projectilePosY + yVelocity * sampleTime;
-
-            projectilePosX = projectilePosX + xVelocity * sampleTime;
-
+            updateProjPos();
 
             timeElapsed++;
 
             updateLabels();
 
             collisionDetect();
+        }
+
+        private void updateProjPos()
+        {
+            yVelocity = yVelocity - gravAcc * sampleTime;
+            projectilePosY = projectilePosY + yVelocity * sampleTime;
+
+            projectilePosX = projectilePosX + xVelocity * sampleTime;
         }
 
         private void updateLabels()
