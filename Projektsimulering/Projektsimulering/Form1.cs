@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -137,6 +138,24 @@ namespace Projektsimulering
 
             gameTimer.Stop();
             updateLabels();
+        }
+
+        private void pBCanvas_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics canvas = e.Graphics;
+
+            GraphicsPath p = new GraphicsPath();
+
+            Pen pen = new Pen(Color.Blue, 100);
+
+            Point pt1 = new Point(30, 30);
+            Point pt2 = new Point(60, 30);
+
+            p.AddLine(pt1, pt2);
+
+            canvas.DrawPath(pen, p);
+
+            //For next time: Method that draws each individual object: Ground, Target, Projectile (former projPos), cannon.
         }
     }
 }

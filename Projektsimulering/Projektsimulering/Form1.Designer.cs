@@ -50,8 +50,10 @@
             this.textLabelStatus = new System.Windows.Forms.Label();
             this.angleNumUpDown = new System.Windows.Forms.NumericUpDown();
             this.velocityNumUpDown = new System.Windows.Forms.NumericUpDown();
+            this.pBCanvas = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.angleNumUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.velocityNumUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBCanvas)).BeginInit();
             this.SuspendLayout();
             // 
             // fireButton
@@ -268,11 +270,22 @@
             this.velocityNumUpDown.Size = new System.Drawing.Size(71, 20);
             this.velocityNumUpDown.TabIndex = 21;
             // 
+            // pBCanvas
+            // 
+            this.pBCanvas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pBCanvas.Location = new System.Drawing.Point(372, 45);
+            this.pBCanvas.Name = "pBCanvas";
+            this.pBCanvas.Size = new System.Drawing.Size(360, 240);
+            this.pBCanvas.TabIndex = 22;
+            this.pBCanvas.TabStop = false;
+            this.pBCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.pBCanvas_Paint);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 315);
+            this.ClientSize = new System.Drawing.Size(756, 315);
+            this.Controls.Add(this.pBCanvas);
             this.Controls.Add(this.velocityNumUpDown);
             this.Controls.Add(this.angleNumUpDown);
             this.Controls.Add(this.textLabelStatus);
@@ -298,6 +311,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.angleNumUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.velocityNumUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,6 +340,7 @@
         private System.Windows.Forms.Label textLabelStatus;
         private System.Windows.Forms.NumericUpDown angleNumUpDown;
         private System.Windows.Forms.NumericUpDown velocityNumUpDown;
+        private System.Windows.Forms.PictureBox pBCanvas;
     }
 }
 
