@@ -33,8 +33,6 @@
             this.restartButton = new System.Windows.Forms.Button();
             this.textLabelAngle = new System.Windows.Forms.Label();
             this.textLabelVelocity = new System.Windows.Forms.Label();
-            this.angleTextBox = new System.Windows.Forms.TextBox();
-            this.velocityTextBox = new System.Windows.Forms.TextBox();
             this.textLabelTPos = new System.Windows.Forms.Label();
             this.textLabelTPosX = new System.Windows.Forms.Label();
             this.textLabelTPosY = new System.Windows.Forms.Label();
@@ -50,6 +48,10 @@
             this.textLabelTime = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
             this.textLabelStatus = new System.Windows.Forms.Label();
+            this.angleNumUpDown = new System.Windows.Forms.NumericUpDown();
+            this.velocityNumUpDown = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.angleNumUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.velocityNumUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // fireButton
@@ -94,24 +96,6 @@
             this.textLabelVelocity.Size = new System.Drawing.Size(44, 13);
             this.textLabelVelocity.TabIndex = 3;
             this.textLabelVelocity.Text = "Velocity";
-            // 
-            // angleTextBox
-            // 
-            this.angleTextBox.Location = new System.Drawing.Point(65, 46);
-            this.angleTextBox.Margin = new System.Windows.Forms.Padding(1);
-            this.angleTextBox.Name = "angleTextBox";
-            this.angleTextBox.Size = new System.Drawing.Size(57, 20);
-            this.angleTextBox.TabIndex = 4;
-            this.angleTextBox.Text = "0";
-            // 
-            // velocityTextBox
-            // 
-            this.velocityTextBox.Location = new System.Drawing.Point(65, 75);
-            this.velocityTextBox.Margin = new System.Windows.Forms.Padding(1);
-            this.velocityTextBox.Name = "velocityTextBox";
-            this.velocityTextBox.Size = new System.Drawing.Size(57, 20);
-            this.velocityTextBox.TabIndex = 5;
-            this.velocityTextBox.Text = "0";
             // 
             // textLabelTPos
             // 
@@ -255,11 +239,42 @@
             this.textLabelStatus.TabIndex = 19;
             this.textLabelStatus.Text = "Status:";
             // 
+            // angleNumUpDown
+            // 
+            this.angleNumUpDown.Location = new System.Drawing.Point(54, 45);
+            this.angleNumUpDown.Maximum = new decimal(new int[] {
+            90,
+            0,
+            0,
+            0});
+            this.angleNumUpDown.Name = "angleNumUpDown";
+            this.angleNumUpDown.Size = new System.Drawing.Size(71, 20);
+            this.angleNumUpDown.TabIndex = 20;
+            // 
+            // velocityNumUpDown
+            // 
+            this.velocityNumUpDown.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.velocityNumUpDown.Location = new System.Drawing.Point(54, 73);
+            this.velocityNumUpDown.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
+            this.velocityNumUpDown.Name = "velocityNumUpDown";
+            this.velocityNumUpDown.Size = new System.Drawing.Size(71, 20);
+            this.velocityNumUpDown.TabIndex = 21;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 315);
+            this.Controls.Add(this.velocityNumUpDown);
+            this.Controls.Add(this.angleNumUpDown);
             this.Controls.Add(this.textLabelStatus);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.textLabelTime);
@@ -274,8 +289,6 @@
             this.Controls.Add(this.textLabelTPosY);
             this.Controls.Add(this.textLabelTPosX);
             this.Controls.Add(this.textLabelTPos);
-            this.Controls.Add(this.velocityTextBox);
-            this.Controls.Add(this.angleTextBox);
             this.Controls.Add(this.textLabelVelocity);
             this.Controls.Add(this.textLabelAngle);
             this.Controls.Add(this.restartButton);
@@ -283,6 +296,8 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.angleNumUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.velocityNumUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,8 +309,6 @@
         private System.Windows.Forms.Button restartButton;
         private System.Windows.Forms.Label textLabelAngle;
         private System.Windows.Forms.Label textLabelVelocity;
-        private System.Windows.Forms.TextBox angleTextBox;
-        private System.Windows.Forms.TextBox velocityTextBox;
         private System.Windows.Forms.Label textLabelTPos;
         private System.Windows.Forms.Label textLabelTPosX;
         private System.Windows.Forms.Label textLabelTPosY;
@@ -311,6 +324,8 @@
         private System.Windows.Forms.Label textLabelTime;
         private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Label textLabelStatus;
+        private System.Windows.Forms.NumericUpDown angleNumUpDown;
+        private System.Windows.Forms.NumericUpDown velocityNumUpDown;
     }
 }
 
